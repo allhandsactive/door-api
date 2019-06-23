@@ -9,7 +9,7 @@
     "test:prettier": "prettier --check .* * ./**/*",
     "test:prettier:fix": "prettier --write .* * ./**/*",
     "test:lint": "eslint --report-unused-disable-directives .",
-    "test:server": "mocha"
+    "test:server": "NODE_ENV=test mocha"
   },
   "repository": {
     "type": "git",
