@@ -23,7 +23,7 @@
   "homepage": "https://github.com/allhandsactive/door-api#readme",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.2.0",
     "eslint-plugin-import": "^2.18.2",
     "mocha": "^6.2.0",
