@@ -37,7 +37,7 @@ app.use(
 );
 
 // configure authentication
-passport.use("password", new passportHttpBearer.Strategy(auth.verify));
+passport.use("token", new passportHttpBearer.Strategy(auth.verify));
 app.use(passport.initialize());
 
 // TODO: routes go here!
