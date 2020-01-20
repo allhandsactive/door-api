@@ -7,7 +7,7 @@ module.exports = {
     if (token === config.token) {
       done(null, true);
     } else {
-      done(new Error("Not authenticated!"));
+      done(null, false);
     }
   },
 };

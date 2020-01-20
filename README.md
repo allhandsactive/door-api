@@ -6,4 +6,10 @@ Build status: [![allhandsactive](https://circleci.com/gh/allhandsactive/door-api
 
 ## API Docs
 
-Working on them...
+### Auth
+
+HTTP bearer tokens (via passport) are used for auth. We support a few methods of passing the token: https://github.com/jaredhanson/passport-http-bearer#making-authenticated-requests
+
+### /user
+
+TBD

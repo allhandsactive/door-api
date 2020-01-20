@@ -40,7 +40,14 @@ app.use(
 passport.use("token", new passportHttpBearer.Strategy(auth.verify));
 app.use(passport.initialize());
 
-// TODO: routes go here!
+app.get(
+  "/user",
+  passport.authenticate("token", { session: false }),
+  (req, res) => {
+    // TODO: get an actual list from LDAP
+    res.json(["01020304", "05060708", "09101112", "13141516"]);
+  },
+);
 
 if (!module.parent) {
   // set up error handling
