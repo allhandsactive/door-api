@@ -51,12 +51,12 @@ app.get(
 
 if (!module.parent) {
   // set up error handling
-  process.on("uncaughtException", err => {
+  process.on("uncaughtException", (err) => {
     log.error("Uncaught exception!", err);
     process.exit(1);
   });
 
-  process.on("unhandledRejection", err => {
+  process.on("unhandledRejection", (err) => {
     log.error("Uncaught promise rejection!", err);
     process.exit(1);
   });
