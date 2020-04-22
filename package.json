@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "npm run test:prettier && npm run test:lint && npm run test:server",
-    "test:prettier": "prettier --check .* * ./**/*",
-    "test:prettier:fix": "prettier --write .* * ./**/*",
+    "test:prettier": "prettier --check .",
+    "test:prettier:fix": "prettier --write .",
     "test:lint": "eslint --report-unused-disable-directives .",
     "test:server": "NODE_ENV=test mocha"
   },
