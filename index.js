@@ -4,6 +4,7 @@ const express = require("express");
 const expressWinston = require("express-winston");
 const fs = require("fs");
 const helmet = require("helmet");
+const nocache = require("nocache");
 const npid = require("npid");
 const passport = require("passport");
 const passportHttpBearer = require("passport-http-bearer");
@@ -29,12 +30,11 @@ app.use(
   }),
 );
 
-// security/caching
-app.use(
-  helmet({
-    noCache: true,
-  }),
-);
+// security
+app.use(helmet());
+
+// don't cache responses
+app.use(nocache());
 
 // configure authentication
 passport.use("token", new passportHttpBearer.Strategy(auth.verify));

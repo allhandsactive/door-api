@@ -35,6 +35,7 @@
     "express": "^4.17.3",
     "express-winston": "^4.2.0",
     "helmet": "^4.6.0",
+    "nocache": "^3.0.1",
     "npid": "^0.4.0",
     "passport": "^0.5.2",
     "passport-http-bearer": "^1.0.1",
