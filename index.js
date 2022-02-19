@@ -49,6 +49,14 @@ app.get(
   },
 );
 
+app.get(
+  "/time",
+  passport.authenticate("token", { session: false }),
+  (req, res) => {
+    res.json(new Date().getTime());
+  },
+);
+
 if (!module.parent) {
   // set up error handling
   process.on("uncaughtException", (err) => {
