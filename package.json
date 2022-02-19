@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "express-winston": "^4.1.0",
+    "express-winston": "^4.2.0",
     "helmet": "^4.6.0",
     "npid": "^0.4.0",
     "passport": "^0.4.1",
