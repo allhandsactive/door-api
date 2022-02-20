@@ -27,3 +27,10 @@ Returns the number of milliseconds since January 1st 1970 UTC
 ```
 1645314605512
 ```
+
+## TODO
+
+- status endpoint - unlock and reboot
+- use github actions
+- publish to docker hub
+- Use an actual database for valid card IDs
