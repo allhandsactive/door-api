@@ -1,9 +1,9 @@
-FROM node:12.18.2
+FROM node:16.14.0
 
 ENV NODE_ENV production
 
 # update npm
-RUN npm install -g npm@6.14.7
+RUN npm install -g npm@8.5.1
 
 WORKDIR /api
 
