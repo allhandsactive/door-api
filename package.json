@@ -39,6 +39,6 @@
     "npid": "^0.4.0",
     "passport": "^0.6.0",
     "passport-http-bearer": "^1.0.1",
-    "winston": "^3.7.2"
+    "winston": "^3.8.1"
   }
 }
