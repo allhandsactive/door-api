@@ -1,0 +1,21 @@
+name: Main Branch Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    uses: ./.github/workflows/test.yml
+
+  # build:
+  #   needs: test
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - uses: actions/checkout@v3
+
+  #     - name: Build and push the image
+  #       run: scripts/build.sh
+  #       env:
+  #         DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
