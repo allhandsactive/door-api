@@ -24,5 +24,3 @@ jobs:
         with:
           push: true
           tags: allhandsactive/door-api:latest, allhandsactive/door-api:${{ github.sha }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
