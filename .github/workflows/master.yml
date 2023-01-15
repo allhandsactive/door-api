@@ -1,8 +1,8 @@
-name: Main Branch Deploy
+name: Test and Deploy to Docker Hub
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   test:
