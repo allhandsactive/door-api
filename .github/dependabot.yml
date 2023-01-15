@@ -16,3 +16,11 @@ updates:
     assignees:
       - "artlogic"
     open-pull-requests-limit: 100
+
+  - package-ecosystem: "docker"
+    directory: "/Dockerfile"
+    schedule:
+      interval: "weekly"
+    assignees:
+      - "artlogic"
+    open-pull-requests-limit: 100
