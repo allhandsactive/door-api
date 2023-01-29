@@ -20,6 +20,14 @@ Returns a JSON formatted list of valid IDs:
 ["01020304", "05060708", "09101112", "13141516"]
 ```
 
+### GET /user/count
+
+Returns the number of users in the system:
+
+```
+4
+```
+
 ### GET /time
 
 Returns the number of milliseconds since January 1st 1970 UTC
