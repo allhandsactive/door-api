@@ -28,6 +28,14 @@ Returns the number of users in the system:
 4
 ```
 
+### GET /user/updated
+
+Returns the time that user database was last updated (in milliseconds since January 1st 1970 UTC)
+
+```
+1645314605512
+```
+
 ### GET /time
 
 Returns the number of milliseconds since January 1st 1970 UTC

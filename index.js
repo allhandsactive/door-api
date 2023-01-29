@@ -50,6 +50,14 @@ app.get(
 );
 
 app.get(
+  "/user/updated",
+  passport.authenticate("token", { session: false }),
+  (req, res) => {
+    res.json(new Date().getTime());
+  },
+);
+
+app.get(
   "/user",
   passport.authenticate("token", { session: false }),
   (req, res) => {
