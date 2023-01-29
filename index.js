@@ -41,10 +41,19 @@ passport.use("token", new passportHttpBearer.Strategy(auth.verify));
 app.use(passport.initialize());
 
 app.get(
+  "/user/count",
+  passport.authenticate("token", { session: false }),
+  (req, res) => {
+    // TODO: get an actual number from sqlite
+    res.json(4);
+  },
+);
+
+app.get(
   "/user",
   passport.authenticate("token", { session: false }),
   (req, res) => {
-    // TODO: get an actual list from LDAP
+    // TODO: get an actual list from sqlite
     res.json(["01020304", "05060708", "09101112", "13141516"]);
   },
 );
