@@ -38,7 +38,7 @@ Returns the time that user database was last updated (in milliseconds since Janu
 
 ### GET /time
 
-Returns the number of milliseconds since January 1st 1970 UTC
+Returns the number of milliseconds since January 1st 1970 UTC:
 
 ```
 1645314605512
@@ -47,6 +47,4 @@ Returns the number of milliseconds since January 1st 1970 UTC
 ## TODO
 
 - status endpoint - unlock and reboot
-- use github actions
-- publish to docker hub
 - Use an actual database for valid card IDs
